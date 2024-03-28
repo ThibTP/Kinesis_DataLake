@@ -12,3 +12,8 @@ output "lambda_function_arn" {
   description = "ARN of the Lambda function"
   value       = aws_lambda_function.event_processor.arn
 }
+
+output "glue_catalog_arn" {
+  description = "ARN of the Glue Data Catalog"
+  value       = aws_glue_catalog_database.my_database.arn
+}
